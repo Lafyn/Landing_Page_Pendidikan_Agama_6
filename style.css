@@ -67,3 +67,8 @@ input, textarea {
     margin-top: 5px;
     margin-bottom: 15px;
 }
+.profile-img {
+    width: 150px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
