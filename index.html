@@ -1,65 +1,101 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Landing Page Tugas Pendidikan Agama 6</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/stylebtn.css" />
+    <link rel="stylesheet" href="style/stylechange.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <a href="#profil" class="nav-logo">Lafyn</a>
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-<nav>
-    <a href="index.html">Beranda</a>
-    <a href="profile.html">Profile</a>
-    <a href="artikel1.html">Artikel 1</a>
-    <a href="artikel2.html">Artikel 2</a>
-    <a href="kontak.html">Kontak</a>
-</nav>
+      <ul class="nav-links">
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#task">Task</a></li>
+        <li><a href="#contact">Kontak</a></li>
+        <!-- <li><a href="#" class="nav-cta">Get Started</a></li> -->
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="content-profil" id="profil">
+        <div class="hero-foto">
+          <img
+            src="src/bagusss.jpeg"
+            alt="Profil Bagus Tri Ardiawan"
+            title="NIM: 312310016"
+          />
+          <div class="foto-overlay"></div>
+        </div>
+        <div class="profil-teks">
+          <h1>Bagus Tri Ardiawan</h1>
+          <h5>
+            Selamat datang di portofolio digital saya – representasi proses
+            belajar, pemikiran, dan eksplorasi sebagai mahasiswa .
+          </h5>
+          <h5>
+            Pendidikan Agama 6 Teknik Informatika Universitas Pelita
+            Bangsa.
+          </h5>
+          <a href="#task" class="cta-btn">Jelajahi Portofolio</a>
+        </div>
+      </div>
+      <div class="wrapper-task" id="task">
+        <section class="btn-task">
+          <button class="btn-tugas active" onclick="showtask('tugas1', this)">
+            Tugas 1
+          </button>
+          <button class="btn-tugas" onclick="showtask('tugas2', this)">
+            Tugas 2
+          </button>
+          <button class="btn-tugas" onclick="showtask('tugasUts', this)">
+            Tugas UTS
+          </button>
+        </section>
+        <div class="content-task">
+          <div class="task-page active" id="tugas1">
+            <p class="loading">Memuat Tugas 1...</p>
+          </div>
 
-<header>
-    <h1>Landing Page Tugas Pendidikan Agama 6</h1>
-    <p>Website Kumpulan Artikel</p>
-</header>
+          <div class="task-page" id="tugas2">
+            <p class="loading">Memuat Tugas 2...</p>
+          </div>
 
-<div class="container">
+          <div class="task-page" id="tugasUts">
+            <p class="loading">Memuat Tugas UTS...</p>
+          </div>
+        </div>
+      </div>
+      <section class="contact-section" id="contact">
+        <div class="contact-container">
+          <div class="contact-info">
+            <h2>Kontak</h2>
+            <div class="contact-detail">
+              <span>Email</span>
+              <p>bagusardiawan@gmail.com</p>
+            </div>
 
-    <!-- Biodata WAJIB di halaman depan -->
-    <div class="card">
+            <div class="contact-detail">
+              <span>NIM</span>
+              <p>312310016</p>
+            </div>
 
-    <h2>Biodata</h2>
-
-    <!-- Foto Profil -->
-    <img src="bagusss.png" alt="Foto Profil" class="profile-img">
-
-    <p><strong>Nama:</strong> Bagus Tri Ardiawan</p>
-    <p><strong>NIM:</strong> 312310016</p>
-    <p><strong>Program Studi:</strong> Teknik Informatika</p>
-    <p><strong>Mata Kuliah:</strong> Pendidikan Agama 6</p>
-    <p><strong>Dosen Pengampu:</strong> Ir. M. Zubair Abdurrohman, S.T., M.T.</p>
-
-</div>
-
-    <!-- Daftar Artikel -->
-    <div class="card">
-        <h2>Daftar Artikel</h2>
-
-        <p>Silakan pilih artikel berikut:</p>
-
-        <a href="artikel1.html">
-            <button>Artikel 1 - Pembatal Syahadatain</button>
-        </a>
-
-        <br><br>
-
-        <a href="artikel2.html">
-            <button>Artikel 2 - Kisah Nabi Yusuf</button>
-        </a>
-
+            <div class="contact-detail">
+              <span>Lokasi</span>
+              <p>Universitas Pelita Bangsa</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-
-</div>
-
-<footer>
-    © 2026 - Bagus Tri Ardiawan
-</footer>
-
-</body>
+  </body>
+  <script src="main/main.js"></script>
 </html>
