@@ -53,6 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
   loadTask("tugas1", "tasks/tugas1.html");
   loadTask("tugas2", "tasks/tugas2.html");
   loadTask("tugasUts", "tasks/tugasUts.html");
+  loadTask("tugas4", "tasks/tugas4.html");
+  loadTask("tugasUas", "tasks/tugasUas.html");
 
   // 🔥 default buka halaman pertama
   const first = document.querySelector(".task-page");
